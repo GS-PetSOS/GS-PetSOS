@@ -8,7 +8,7 @@ Desenvolver uma solução digital eficaz para desaparecimento de pets, devido de
  
 ## 🚀 Objetivos
  
-Criar um sistema acessível para:
+Criar um sistema acessível para: 
  
 - 🧭 Ajudar tutores a encontrar seus animais perdidos.
 
