@@ -2,7 +2,7 @@
  
 ## 📌 Objetivo do Projeto
  
-Desenvolver uma solução digital eficaz para desaparecimento de pets, devido desastres extremos para **reportar e ajudar a localizar animais perdidos em ambientes hostis** para **conectar tutores e resgatadores de animais perdidos durante desastres** .
+Desenvolver uma solução digital eficaz para desaparecimento de pets, devido desastres extremos para **reportar e ajudar a localizar animais perdidos em ambientes hostis** para **conectar tutores e resgatadores de animais perdidos durante desastres**.
  
 ---
  
