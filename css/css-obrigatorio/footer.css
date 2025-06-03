@@ -1,0 +1,16 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-base);
+    color: #00000078;
+    font-size: 1.1rem;
+    background-color: var(--cor-primaria);
+    height: 4.9rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+footer a{
+   color: #00000078;
+   font-weight: bold;
+}
