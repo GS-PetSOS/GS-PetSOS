@@ -405,5 +405,160 @@ h4{
 }
 
 @media(min-width:1300px){
+    .container{
+        height: 13rem;
+        font-size: 2.5rem;
+    }
+
+    footer{
+        font-size: 1.8rem;
+        height: 8.2rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+
+    h3{
+    font-size: 2.5rem;
+    }
+
+    h4{
+
+        font-size: 2.1rem;
+    }
+
+    .botao-menu{
+        width:190px;
+        height:50px;
+    }
+
+    #links-navegacao ul li a{
+        font-size: 1.8rem;
+    }
+    .botao-da-pagina{
+        width:190px;
+        height:50px;
+    }
+
+    .titulo-amarelo{
+        font-size: 2.5rem;
+    }
+    #oque-e p{
+        font-size: 2rem;
+    }
+
+    #como-funciona div{
+        margin: 2% 2%;
+        width: 580px;
+        height: 90px;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    #como-funciona div p{
+        font-size: 2rem;
+    }
+    #como-funciona div i{
+        font-size: 2rem;
+    }
+    #pontos #brilhante div{
+        width: 580px;
+        height: 70px;
+    }
+    #pontos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7rem;
+    }
+
+    #beneficios{
+        width: 800px;
+        text-align: center;
+    }
+
+    #beneficios p{
+        font-size: 2rem;
+    }
+
+    #brilhante p{
+        font-size: 2rem;
+    }
+
+    #contatos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #endereco, #canais-atendimento, #funcionamento, #como-chegar{
+        margin: 3rem;
+        width: 450px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #endereco p, #canais-atendimento p, #funcionamento p{
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    #como-chegar p a{
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    #canais-atendimento p a{
+        font-size: 2rem;
+    }
+
+    iframe{
+        width: 350px;
+        height: 190px;
+        margin: 1rem;
+    }
+
+    #caixa-de-duvida{
+        margin: 3rem;
+        width: 580px;
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #duvidas{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #caixa-de-duvida p{
+        font-size: 2rem;
+    }
+
+    #gabriel, #moises, #thiago{   
+        width:750px;
+        height:790px;
+        padding: 2rem;
+        margin: 2%;
+    }
+
+    #gabriel img, #moises img, #thiago img{
+        margin-top: 2rem;
+    }
+
+    #gabriel p, #moises p, #thiago p{
+        font-size: 2rem;
+        margin: 6%;
+    }
+
+    #gabriel nav a, #moises nav a, #thiago nav a{
+        font-size: 2rem;
+        width: 250px;
+        height: 45px;
+    } 
+    #gabriel img, #moises img, #thiago img{
+        margin-top: 1rem;
+    }
 
 }
