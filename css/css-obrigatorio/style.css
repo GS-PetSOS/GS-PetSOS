@@ -91,3 +91,110 @@ h4{
     border-radius: 10px;
     box-shadow:2px 2px 5px var(--color-font)
 }
+
+@media(min-width:601px) and (max-width:768px){
+    .container{
+        height: 7rem;
+        font-size: 1.5rem;
+    }
+
+    footer{
+        font-size: 1.3rem;
+        height: 6rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+    font-size: 1.7rem;
+    }
+
+    h4{
+
+        font-size: 1.5rem;
+    }
+
+    .botao-menu{     
+        width:180px;
+        height:50px;
+    }
+
+    #links-navegacao ul li a{    
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .botao-da-pagina{
+        width:180px;
+        height:50px;
+    }
+
+    .titulo-amarelo{
+        font-size: 1.7rem;
+    }
+    #oque-e p{
+        font-size: 1.5rem;
+    }
+
+    #como-funciona div{
+        width: 150px;
+        height: 180px;
+    }
+
+    #como-funciona div p{
+        font-size: 1.4rem;
+    }
+    #como-funciona div i{
+        font-size: 1.7rem;
+    }
+    #pontos #brilhante div{
+        width: 170px;
+        height: 50px;
+    }
+    #pontos{
+        display: flex;
+        gap: 7rem;
+    }
+
+    #beneficios{
+        width: 150px;
+        text-align: left;
+    }
+
+    #beneficios p{
+        font-size: 1.4rem;
+    }
+
+    #brilhante p{
+        font-size: 1.4rem;
+    }
+
+    #endereco, #canais-atendimento, #funcionamento, #como-chegar{
+        margin: 1rem;
+        width: 380px;
+    }
+
+    #contatos{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    #endereco p, #canais-atendimento p, #funcionamento p{
+        font-size: 1.4rem;
+    }
+
+    #como-chegar p a{
+        font-size: 1.4rem;
+    }
+
+    #canais-atendimento p a{
+        font-size: 1.4rem;
+    }
+
+    iframe{
+        width: 300px;
+        height: 180px;
+    }
+}
