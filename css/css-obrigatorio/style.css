@@ -197,4 +197,34 @@ h4{
         width: 300px;
         height: 180px;
     }
+
+    #caixa-de-duvida{
+        margin: 1rem;
+        width: 380px;
+    }
+
+    #caixa-de-duvida p{
+        font-size: 1.4rem;
+    }
+
+    #gabriel, #moises, #thiago{   
+        width:290px;
+        height:495px;
+        padding: 1rem;
+    }
+
+    #gabriel img, #moises img, #thiago img{
+        margin-top: 2rem;
+    }
+
+    #gabriel p, #moises p, #thiago p{
+        font-size: 1.3rem;
+        margin: 4%;
+    }
+
+    #gabriel nav a, #moises nav a, #thiago nav a{
+        font-size: 1.5rem;
+        width: 150px;
+        height: 30px;
+    }
 }
