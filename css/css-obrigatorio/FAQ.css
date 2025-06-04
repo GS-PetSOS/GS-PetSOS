@@ -1,0 +1,31 @@
+#duvidas{
+    margin: 5%;
+}
+
+#caixa-de-duvida{
+    background-color: #7ab4ebe2;
+    margin: 2%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:2px 2px 5px var(--color-font);
+    padding: 2rem;
+}
+
+#caixa-de-duvida p{
+    font-family: var(--font-base);
+    color: #ffffff9d;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#caixa-de-duvida a{
+    color: #F9B788;
+}
+
+#pergunta-01{
+    margin: 5%;
+}
+
+#pergunta-02{
+    margin: 5%;
+}
