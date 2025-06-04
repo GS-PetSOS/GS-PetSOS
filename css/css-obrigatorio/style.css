@@ -92,7 +92,7 @@ h4{
     box-shadow:2px 2px 5px var(--color-font)
 }
 
-@media(min-width:601px) and (max-width:768px){
+@media(min-width:601px){
     .container{
         height: 7rem;
         font-size: 1.5rem;
@@ -226,5 +226,184 @@ h4{
         font-size: 1.5rem;
         width: 150px;
         height: 30px;
+    }    
+}
+
+
+@media(min-width:992px){
+    .container{
+        height: 9rem;
+        font-size: 1.8rem;
     }
+
+    footer{
+        font-size: 1.5rem;
+        height: 7.5rem;
+    }
+    h2{
+        font-size: 2.6rem;
+    }
+
+    h3{
+    font-size: 2rem;
+    }
+
+    h4{
+
+        font-size: 1.7rem;
+    }
+
+    .botao-menu{
+        background-color: var(--cor-primaria);
+        margin: 0;
+        width:150px;
+        height:40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        box-shadow:0 0;
+    }
+
+    #links-navegacao{
+        background-color: var(--cor-primaria);
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+    }
+    #links-navegacao ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #links-navegacao ul li a{
+        color: var(--color-font);
+        font-family: var(--font-base);
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    .botao-da-pagina{
+        background-color: #ffffff6c;
+        margin: 0;
+        width:150px;
+        height:40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 0;
+    }
+
+    .titulo-amarelo{
+        font-size: 2rem;
+    }
+    #oque-e p{
+        font-size: 1.7rem;
+    }
+
+    #como-funciona div{
+        margin: 2% 2%;
+        width: 450px;
+        height: 90px;
+        display: flex;
+        gap: 1rem;
+    }
+
+    #como-funciona div p{
+        font-size: 1.7rem;
+        display: flex;
+        align-items: center;
+    }
+    #como-funciona div i{
+        font-size: 2rem;
+    }
+    #pontos #brilhante div{
+        width: 450px;
+        height: 60px;
+    }
+    #pontos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7rem;
+    }
+
+    #beneficios{
+        width: 800px;
+        text-align: center;
+    }
+
+    #beneficios p{
+        font-size: 1.7rem;
+    }
+
+    #brilhante p{
+        font-size: 1.7rem;
+    }
+
+    #endereco, #canais-atendimento, #funcionamento, #como-chegar{
+        margin: 3rem;
+        width: 480px;
+    }
+
+    #endereco p, #canais-atendimento p, #funcionamento p{
+        font-size: 1.7rem;
+    }
+
+    #como-chegar p a{
+        font-size: 1.7rem;
+    }
+
+    #canais-atendimento p a{
+        font-size: 1.7rem;
+    }
+
+    iframe{
+        width: 350px;
+        height: 190px;
+    }
+
+    #caixa-de-duvida{
+        margin: 3rem;
+        width: 580px;
+    }
+
+    #caixa-de-duvida p{
+        font-size: 1.7rem;
+    }
+
+    #integrantes{
+        display: flex;
+        flex-direction: row;
+    }
+    #gabriel, #moises, #thiago{   
+        width:290px;
+        height:650px;
+        padding: 2rem;
+        margin: 2%;
+    }
+
+    #gabriel img, #moises img, #thiago img{
+        margin-top: 2rem;
+    }
+
+    #gabriel p, #moises p, #thiago p{
+        font-size: 1.7rem;
+        margin: 6%;
+    }
+
+    #gabriel nav a, #moises nav a, #thiago nav a{
+        font-size: 1.5rem;
+        width: 250px;
+        height: 40px;
+    } 
+    #gabriel img, #moises img, #thiago img{
+        max-width: 20vw;
+        margin-top: 1rem;
+    }
+}
+
+@media(min-width:1300px){
+
 }
