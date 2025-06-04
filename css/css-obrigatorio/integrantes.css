@@ -1,0 +1,78 @@
+#links-navegacao-integrantes{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    text-align: center;
+}
+
+#links-navegacao-integrantes ul li{
+    background-color: var(--cor-primaria);
+    margin: 1rem;
+    width:150px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow:2px 2px 5px var(--color-font)
+}
+
+#links-navegacao-integrantes ul li a{
+    color: var(--color-font);
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+#integrantes{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    margin: 3%;
+}
+
+#gabriel, #moises, #thiago{
+    background-color: var(--cor-primaria);
+    width:130px;
+    height:310px;
+    border-radius: 10px;
+    box-shadow:2px 2px 5px var(--color-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.7rem;
+}
+
+#gabriel img, #moises img, #thiago img{
+    max-width: 23vw;
+    border-radius: 10px;
+}
+
+#gabriel p, #moises p, #thiago p{
+    font-family: var(--font-base);
+    color: var(--color-font);
+    font-size: 0.8rem;
+    margin: 5%;
+}
+
+#gabriel nav, #moises nav, #thiago nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+#gabriel nav a, #moises nav a, #thiago nav a{
+    font-family: var(--font-base);
+    color: var(--color-font);
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #7AB5EB;
+    border-radius: 10px;
+    width: 100px;
+    height: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,28 @@
+@import url(../css-petsos/header.css);
+@import url(../css-petsos/footer.css);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style:none
+}
+html, body{
+    font-size:62.5%;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+:root{
+    --cor-primaria:#C9DCBF;
+    --font-base:"Roboto",sans-serif;
+    --color-font: #1e1e1e
+}
+main{
+    height: 100%;
+}

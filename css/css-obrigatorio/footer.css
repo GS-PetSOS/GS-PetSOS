@@ -2,6 +2,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: var(--font-base);
     color: #00000078;
     font-size: 1.1rem;
