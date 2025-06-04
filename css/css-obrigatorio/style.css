@@ -4,6 +4,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
 @import url(../css-obrigatorio/FAQ.css);
 @import url(../css-obrigatorio/contato.css);
+@import url(../css-obrigatorio/index.css);
 *{
     margin:0;
     padding:0;
@@ -37,12 +38,19 @@ main{
 h2{
     font-family: var(--font-base);
     color: var(--color-font);
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 }
 
 h3{
     font-family: var(--font-base);
     color: var(--color-font);
+    font-size: 1.4rem;
+}
+
+h4{
+    font-family: var(--font-base);
+    color: var(--color-font);
+    font-weight: 600;
     font-size: 1.3rem;
 }
 
