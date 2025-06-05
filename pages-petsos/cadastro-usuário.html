@@ -5,22 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="../css/css-petsos/style.css">
-         <link rel="shortcut icon" href="../assets/img/img-obrigatorias/logo.png">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../assets/img/img-obrigatorias/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/petSOS/usuario.js" defer></script>
 </head>
 <body>
      <header>
         <a href="../pages-petsos/principal.html">
             <div class="container">
-                <img src="../assets/img/img-solucao/cadastro/" alt="Logo da petSOS">
+                <img src="../assets/img/img-solucao/cadastro/logo.png" alt="Logo da petSOS">
                 <h1>PetSOS</h1>
             </div>
         </a>
     </header>
     <main>
-        <div>
+        <div id="cadastro">
             <i class="fa-solid fa-arrow-left"></i>
-            <h2>Cadastro Usuário</h2>
+            <h2>Cadastro de Usuário</h2>
+        </div>
+        <div id="formulario">
+            <form method="post" enctype="multipart/form-data" id="frmCadastro">
+                <fieldset id="preencher">
+                    <div id="campos">
+                        <input type="text" name="nome" id="idNome" maxlength="100" required>
+                        <label id="labelNome" for="idNome">Nome</label>
+                    </div>
+                    <div id="campos">  
+                        <input type="tel" name="tel" id="idTelefone" minlength="11" maxlength="11" required>
+                        <label id="labelTelefone" for="idTelefone">Telefone</label>
+                    </div>  
+                    <div id="campos">  
+                        <input type="email" name="email" id="idEmail" required>
+                        <label id="labelEmail" for="idEmail">Email</label>
+                    </div>  
+                    <div id="campos">
+                        <input type="text" name="CPF" id="idCpf" maxlength="11" pattern="\d{11}" required>
+                        <label id="labelCpf" for="idCpf" >CPF</label>
+                    </div>
+                    <div id="campos">
+                        <input type="password" name="senha" id="idSenha" minlength="5" maxlength="100" required>
+                        <label id="labelSenha" for="idSenha">Criar Senha</label>
+                    </div>
+                        <div id="foto">
+                            <label for="idFoto" id="btnfoto">
+                                <i class="fa-solid fa-camera"></i>
+                                Adicionar Foto de Perfil
+                            </label>
+                            <input type="file" id="idFoto" name="foto" accept="image/*" required hidden>
+                        </div>                
+                    </div>
+                </fieldset>
+                <fieldset id="botao">
+                    <button onclick="cadastrar(event)" type="submit" id="btnCadastro">Cadatrar</button>
+                </fieldset>
+            </form>   
         </div>
     </main>
     <footer>
