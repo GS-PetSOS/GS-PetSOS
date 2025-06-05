@@ -2,12 +2,13 @@
 @import url(../css-petsos/footer.css);
 @import url(../css-petsos/principal.css);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
+@import url(../css-petsos/usuario.css);
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
     text-decoration:none;
-    list-style:none
+    list-style:none;
 }
 html, body{
     font-size:62.5%;
@@ -107,10 +108,61 @@ h4{
         margin-top: 10%;
     }
 
+    #cadastro{
+        font-size: 2.5rem;
+        margin:5%;
+    }
+
+    #cadastro h2{
+        margin-right: 22%;
+    }
+
+    #labelNome, #labelTelefone, #labelEmail, #labelCpf, #labelSenha{
+        font-size: 1.7rem;
+    }
+
+    #frmCadastro #preencher{
+        padding: 4rem;
+        width: 400px;
+    }
+
+    #campos input{
+        padding: 7px;
+        min-width: 200px;
+        font-size: 1.5rem;
+    }
+
+    #campos{
+        padding-top: 17px;
+    }
+
+    #campos label{
+        margin-top: 17px;
+    }
+
+    #campos input:focus + label{
+        font-size: 12px;
+    }
+
+    #botao button{
+        margin-top: 35% ;   
+        width: 280px;
+        height: 65px;
+        font-size: 2.5rem;
+    }
+    #btnfoto{
+        padding: 4rem;
+        gap: 2rem;
+        width: 250px;
+        height: 180px;
+        font-size: 1.5rem;
+    }
+    #btnfoto i{
+        font-size: 5rem;
+    }
 }
 
 @media(min-width:992px){
-
     .container{
         gap: 2rem;
         height: 9rem;
@@ -153,6 +205,60 @@ h4{
         margin: 0 10%;
     }
 
+    #cadastro{
+        font-size: 4rem;
+        margin:5%;
+        margin-bottom: 0;
+    }
+
+    #cadastro h2{
+        margin-right: 25%;
+    }
+
+    #labelNome, #labelTelefone, #labelEmail, #labelCpf, #labelSenha{
+        font-size: 2rem;
+    }
+
+    #frmCadastro #preencher{
+        padding: 5rem;
+        width: 700px;
+    }
+
+    #campos input{
+        padding: 9px;
+        min-width: 250px;
+        font-size: 1.8rem;
+    }
+
+    #campos{
+        padding-top: 20px;
+    }
+
+    #campos label{
+        margin-top: 20px;
+    }
+
+    #campos input:focus + label{
+        font-size: 16px;
+    }
+
+    #botao button{
+        margin: 10% 0;
+        margin-top: 40%;   
+        width: 380px;
+        height: 85px;
+        font-size: 2.5rem;
+    }
+    #btnfoto{
+        padding: 4.2rem;
+        gap: 2rem;
+        width: 380px;
+        height: 200px;
+        font-size: 1.8rem;
+    }
+    #btnfoto i{
+        font-size: 5.5rem;
+    }
 }
 
 @media(min-width:1300px){
@@ -188,5 +294,37 @@ h4{
 
     #animais-principal{
         margin: 2% 0 0 0;
+    }
+
+    
+    #cadastro{
+        font-size: 5rem;
+    }
+
+    #labelNome, #labelTelefone, #labelEmail, #labelCpf, #labelSenha{
+        font-size: 2.5rem;
+    }
+
+    #frmCadastro #preencher{
+        padding: 5.5rem;
+        width: 1000px;
+    }
+
+    #campos input{
+        padding: 12px;
+        min-width: 280px;
+        font-size: 2rem;
+    }
+
+    #campos{
+        padding-top: 25px;
+    }
+
+    #campos label{
+        margin-top: 25px;
+    }
+
+    #campos input:focus + label{
+        font-size: 19px;
     }
 }
