@@ -1,5 +1,6 @@
 @import url(../css-petsos/header.css);
 @import url(../css-petsos/footer.css);
+@import url(../css-petsos/principal.css);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
 *{
     margin:0;
@@ -10,13 +11,12 @@
 }
 html, body{
     font-size:62.5%;
-    height: 100%;
+    min-height: 100%;
 }
 body {
     display: flex;
     flex-direction: column;
 }
-
 
 :root{
     --cor-primaria:#C9DCBF;
@@ -25,4 +25,168 @@ body {
 }
 main{
     height: 100%;
+    background-color: #EBEBD6;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+h2{
+    font-family: var(--font-base);
+    color: var(--color-font);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3{
+    font-family: var(--font-base);
+    color: var(--color-font);
+    font-size: 1.6rem;
+}
+
+h4{
+    font-family: var(--font-base);
+    color: var(--color-font);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+@media(min-width:601px){
+    .container{
+        gap: 1rem;
+        height: 7rem;
+        font-size: 1.5rem;
+    }
+
+    footer{
+        font-size: 1.3rem;
+        height:6rem;
+        padding: 3rem;
+    }
+
+    h2{
+        font-size: 2.7rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    h4{
+        font-size: 1.6rem;
+    }
+
+    #perdido a{
+        gap: 1rem;
+        width: 350px;
+        height: 90px;
+        font-size: 2rem;
+        padding: 1.7rem;
+    }
+    #encontrado a{
+        gap: 0rem;
+        width: 350px;
+        height: 90px;
+        font-size: 2rem;
+        padding: 1.7rem;
+    }
+
+    #cadastro a{
+        gap: 3.5rem;
+        width: 350px;
+        height: 90px;
+        font-size: 2rem;
+        padding: 1.7rem;
+    }
+
+    #animais-principal{
+        margin: 5%;
+    }
+    #animais-principal div{
+        margin-top: 10%;
+    }
+
+}
+
+@media(min-width:992px){
+
+    .container{
+        gap: 2rem;
+        height: 9rem;
+        font-size: 1.8rem;
+    }
+
+    footer{
+        font-size: 1.6rem;
+        height: 9rem;
+        padding: 5rem;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    h3{
+        font-size: 2.5rem;
+    }
+
+    h4{
+        font-size: 2rem;
+    }
+
+    #botoes{
+        flex-direction: row;
+        gap: 0;
+        justify-content: center;
+        margin: 10%;
+    }
+
+    #perdido a, #encontrado a, #cadastro a{
+       width: 300px;
+       height: 130px;
+       margin: 2rem;
+    }
+
+    #animais-principal img{
+        max-width: 20vw;
+        margin: 0 10%;
+    }
+
+}
+
+@media(min-width:1300px){
+    .container{
+        gap: 5rem;
+        height: 13rem;
+        font-size: 2rem;
+    }
+
+    footer{
+        font-size: 2rem;
+        height: 11rem;
+        padding: 6rem;
+    }
+
+    h2{
+        font-size: 3.3rem;
+    }
+
+    h3{
+        font-size: 2.8rem;
+    }
+
+    h4{
+        font-size: 2.5rem;
+    }       
+
+    #perdido a, #encontrado a, #cadastro a{
+       width: 400px;
+       height: 180px;
+       font-size: 2rem;
+    }
+
+    #animais-principal{
+        margin: 2% 0 0 0;
+    }
 }
