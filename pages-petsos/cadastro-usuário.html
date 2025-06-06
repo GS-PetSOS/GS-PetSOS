@@ -19,7 +19,7 @@
         </a>
     </header>
     <main>
-        <div id="cadastro">
+        <div id="cadastrar">
             <i class="fa-solid fa-arrow-left"></i>
             <h2>Cadastro de Usuário</h2>
         </div>
@@ -48,10 +48,12 @@
                     </div>
                         <div id="foto">
                             <label for="idFoto" id="btnfoto">
-                                <i class="fa-solid fa-camera"></i>
-                                Adicionar Foto de Perfil
-                            </label>
+                                <img id="previewFoto" src="" alt="Foto de perfil">
+                                <i id="imgbnt" class="fa-solid fa-camera"></i>
+                               <span id="adcFoto">Adicionar Foto de Perfil</span>
+                            </label>                        
                             <input type="file" id="idFoto" name="foto" accept="image/*" required hidden>
+                            
                         </div>                
                     </div>
                 </fieldset>
@@ -62,6 +64,8 @@
         </div>
     </main>
     <footer>
+        <i class="fa-solid fa-chevron-up"></i>
+        <a href="#links-navegacao">Voltar ao topo da página</a>
         <p>&copy; Minha Página - Todos os Direitos Reservados</p>
     </footer>
 </body>

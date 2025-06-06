@@ -108,12 +108,12 @@ h4{
         margin-top: 10%;
     }
 
-    #cadastro{
+    #cadastrar{
         font-size: 2.5rem;
         margin:5%;
     }
 
-    #cadastro h2{
+    #cadastrar h2{
         margin-right: 22%;
     }
 
@@ -160,6 +160,14 @@ h4{
     #btnfoto i{
         font-size: 5rem;
     }
+
+    #previewFoto{
+        display: none;
+        width: 250px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
 }
 
 @media(min-width:992px){
@@ -205,13 +213,13 @@ h4{
         margin: 0 10%;
     }
 
-    #cadastro{
+    #cadastrar{
         font-size: 4rem;
         margin:5%;
         margin-bottom: 0;
     }
 
-    #cadastro h2{
+    #cadastrar h2{
         margin-right: 25%;
     }
 
@@ -259,12 +267,20 @@ h4{
     #btnfoto i{
         font-size: 5.5rem;
     }
+
+    #previewFoto{
+        display: none;
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
 }
 
 @media(min-width:1300px){
     .container{
         gap: 5rem;
-        height: 13rem;
+        height: 17rem;
         font-size: 2rem;
     }
 
@@ -288,7 +304,7 @@ h4{
 
     #perdido a, #encontrado a, #cadastro a{
        width: 400px;
-       height: 180px;
+       height: 250px;
        font-size: 2rem;
     }
 
@@ -296,8 +312,7 @@ h4{
         margin: 2% 0 0 0;
     }
 
-    
-    #cadastro{
+    #cadastrar{
         font-size: 5rem;
     }
 
@@ -326,5 +341,18 @@ h4{
 
     #campos input:focus + label{
         font-size: 19px;
+    }
+
+    #btnfoto{
+        width: 380px;
+        height: 200px;
+    }
+
+    #previewFoto{
+        display: none;
+        width: 380px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
     }
 }

@@ -1,4 +1,4 @@
-#cadastro{
+#cadastrar{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -6,7 +6,7 @@
     margin:5%;
 }
 
-#cadastro h2{
+#cadastrar h2{
     margin-right: 17%;
 }
 #formulario{
@@ -41,8 +41,8 @@
     min-width: 180px;
     font-size: 1.3rem;
     transition: all .3s ease-out;
+    border-radius: 0;    
     border-radius: 0;
-    
 }
 
 #frmCadastro #preencher{
@@ -134,4 +134,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+#previewFoto{
+    display: none;
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
 }
