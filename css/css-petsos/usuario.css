@@ -32,17 +32,16 @@
 
 #campos input{
     width: 100%;
-    padding: 5px;
+    padding: 5px 5px;
     display: inline-block;
     background-color: transparent;
     border: 0;
-    border-bottom: 1px solid var(--color-font);
+    border-bottom: 2px solid var(--color-font);
     outline: none;
     min-width: 180px;
     font-size: 1.3rem;
     transition: all .3s ease-out;
     border-radius: 0;    
-    border-radius: 0;
 }
 
 #frmCadastro #preencher{
@@ -60,7 +59,8 @@
 #campos{
     position: relative;
     padding-top: 13px;
-    margin: 7% 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #campos input:focus{
@@ -76,8 +76,9 @@
     transition: all .3s ease-out;
 }
 
-#campos input:focus + label{
-    font-size: 10px;
+#campos input:focus + label, 
+#campos input:valid + label{
+    font-size: 1.5rem;
     margin-top: 0;
     color: var(--color-font);
 }
@@ -143,4 +144,28 @@
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+#msgError{
+    text-align: center; 
+    color: #ff0000; 
+    background-color: #ff1234; 
+    width: 25vw; height: 4.5vh; 
+    border-radius: 4px; 
+    display: none;
+}
+#msgSuccess{text-align: center; 
+    color: #00bb00; 
+    background-color: #bbffbe; 
+    width: 25vw; height: 4vh;
+    border-radius: 4px; 
+    display: none;
+}
+#msgErro{
+    font-size: 1.3rem; 
+    font-family: var(--font-base);
+}
+#msgSuce{
+    font-size: 1.3rem; 
+    font-family: var(--font-base);
 }
