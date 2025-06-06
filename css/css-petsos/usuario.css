@@ -146,20 +146,31 @@
     border-radius: 10px;
 }
 
+#mensagem-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #msgError{
     text-align: center; 
     color: #ff0000; 
     background-color: #ff1234; 
-    width: 25vw; height: 4.5vh; 
+    width: 23rem; 
+    height:5rem; 
     border-radius: 4px; 
     display: none;
+    padding: 1rem;
 }
-#msgSuccess{text-align: center; 
+#msgSuccess{
+    text-align: center; 
     color: #00bb00; 
     background-color: #bbffbe; 
-    width: 25vw; height: 4vh;
+    width: 23rem; 
+    height: 5rem;
     border-radius: 4px; 
     display: none;
+    padding: 1rem;
 }
 #msgErro{
     font-size: 1.3rem; 

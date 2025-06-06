@@ -1,0 +1,65 @@
+#perfil{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+}
+
+#perfil div{
+    margin: 7%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#perfil div p{
+    font-family: var(--font-base);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-font);
+}
+
+#fotoPerfil{
+    max-width: 20vw;
+    border-radius: 100rem;
+    border: 3px solid #000000c0;
+}
+
+#pets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+}
+
+#pets h3{
+    display: flex;
+    text-align: left;
+}
+
+#bartolomeu, #clodomiro, #garfhielddhy{
+    border: 2px solid #000000a7;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    width: 200px;
+    height: 80px;
+}
+
+#bartolomeu p, #clodomiro p, #garfhielddhy p{
+    font-family: var(--font-base);
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--color-font);
+}
+
+
+#fotoPet{
+    max-width: 10vw;
+    border-radius: 10px;
+}

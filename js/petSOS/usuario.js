@@ -39,10 +39,9 @@ inputFoto.addEventListener('change', function() {
     }
 });
 
-
 telefone.addEventListener('keyup', () => {
     if(telefone.value.length < 11){
-      labelTelefone.innerHTML = "Telefone *Insira um telefone válido";
+      labelTelefone.innerHTML = "Telefone *inválido";
       telefone.setAttribute('style', 'color: red');
       validTelefone = false;
     }else{
@@ -70,7 +69,7 @@ cpf.addEventListener('keyup', () => {
       cpf.setAttribute('style', 'color: red');
       validCpf = false;
     }else{
-      labelCPF.innerHTML = "CPF";
+      labelCpf.innerHTML = "CPF";
       cpf.setAttribute('style', 'color: green');
       validCpf = true;
     }
@@ -90,10 +89,8 @@ cpf.addEventListener('keyup', () => {
 
 function cadastrar(event) {
     event.preventDefault();
-
-    const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
     
-    if(validCPF && validTelefone && validNome && validSenha){
+    if(validCpf && validTelefone && validEmail && validSenha){
         const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
      
         usuarios.push({
@@ -107,19 +104,24 @@ function cadastrar(event) {
      
     localStorage.setItem("usuarios", JSON.stringify(usuarios))
 
-
-    msgSuccess.setAttribute("style", "display: block");
+    msgSuccess.setAttribute("style", "display: flex");
     msgSuce.textContent = "Cadastrando usuário...";
     msgSuce.style.color = "#ffff";
     msgError.setAttribute("style", "display: none")
     msgError.innerHTML = ""
     setTimeout(() => {
-        // Redireciona para a página principal
+        //Redireciona para a página principal
         window.location.href = "../pages-petsos/principal.html";
     }, 2000);
-    form.reset();
+    form.reset(
+      previewFoto.src = '',
+      previewFoto.style.display = 'none',
+      imgbnt.style.display = 'block',
+      adcFoto.style.display = 'block',
+      btnfoto.style.padding = '20px'
+    );
   }else{
-    msgError.setAttribute("style", "display: block")
+    msgError.setAttribute("style", "display: flex")
     msgErro.textContent = "Todos os campos devem ser preenchidos corretamente!";
     msgErro.style.color = "#ffff";
     msgSuccess.setAttribute("style", "display: none")
@@ -127,6 +129,4 @@ function cadastrar(event) {
   }
 }
 
-btn.addEventListener('click', function(){
-    cadastrar(nomeCad, telefoneCad, emailCad, cpfCad, senhaCad, fotoCad);
-})
+btn.addEventListener('click', cadastrar);
