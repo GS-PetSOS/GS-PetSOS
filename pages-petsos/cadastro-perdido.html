@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Encontrado</title>
     <link rel="stylesheet" href="../css/css-petsos/style.css">
-         <link rel="shortcut icon" href="../assets/img/img-obrigatorias/logo.png">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../assets/img/img-obrigatorias/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/petSOS/perdido.js" defer></script>
 </head>
 <body>
      <header>
@@ -18,17 +19,51 @@
         </a>
     </header>
     <main>
-        <div>
+        <div id="cadastrar-animal">
             <a id="voltar" href="../pages-petsos/principal.html">
                 <i class="fa-solid fa-arrow-left"></i>
             </a>
-            <h2>Cadastro Animal Perdido</h2>
+            <h2>Cadastrar Animal Perdido</h2>
         </div>
-        <section>
-                             
-        </section>
+        <div id="mensagem-cadastro-animal">
+            <div id="msgError-animal"><strong id="msgErro-animal"></strong></div>
+            <div id="msgSuccess-animal"><strong id="msgSuce-animal"></strong></div>
+        </div>
+        <div id="formulario-animal">
+            <form method="post" enctype="multipart/form-data" id="frmCadastro-animal">
+                <fieldset id="preencher-animal">
+                    <div id="campos-animal">
+                        <input type="text" name="descricao" id="idDescricao-animal" maxlength="300" required>
+                        <label id="labelDescricao-animal" for="idDescricao-animal">Descrição</label>
+                    </div>
+                    <div id="campos-animal">
+                        <input type="date" name="data-desaparecimento" id="idData-animal" required>
+                        <label id="labelData-animal" for="idData-animal">Data do desaparecimento</label>
+                    </div>
+                    <div id="campos-animal">
+                        <input type="text" name="nome" id="idNome-animal" maxlength="100" required>
+                        <label id="labelNome-animal" for="idNome-animal">Nome</label>
+                    </div>
+                    <div id="foto-animal">
+                            <label for="idFoto-animal" id="btnfoto-animal">
+                                <img id="previewFoto-animal" src="" alt="Foto do animal perdido">
+                                <i id="imgbnt-animal" class="fa-solid fa-camera"></i>
+                               <span id="adcFoto-animal">Adicionar Foto</span>
+                            </label>                        
+                            <input type="file" id="idFoto-animal" name="foto-animal" accept="image/*" required hidden>                            
+                        </div>               
+                </div>
+                </fieldset>
+                <fieldset id="botao-animal">
+                    <button id="btnCadastro-animal" type="submit">Cadastrar</button>
+                </fieldset>
+            </form>
+            <p id="mensagem"></p>
+        </div>
     </main>
     <footer>
+        <i class="fa-solid fa-chevron-up"></i>
+        <a href="#links-navegacao">Voltar ao topo da página</a>
         <p>&copy; Minha Página - Todos os Direitos Reservados</p>
     </footer>
 </body>
