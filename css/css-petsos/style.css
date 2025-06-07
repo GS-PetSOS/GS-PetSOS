@@ -176,7 +176,60 @@ h4{
         font-size: 5rem;
     }
 
-    #previewFoto{
+    #cadastrar-animal{
+        font-size: 2.5rem;
+        margin:5%;
+    }
+
+    #cadastrar-animal h2{
+        margin-right: 22%;
+    }
+
+    #labelNome-animal, #labelData-animal, #labelDescricao-animal{
+        font-size: 1.7rem;
+    }
+
+    #frmCadastro-animal #preencher-animal{
+        padding: 4rem;
+        width: 400px;
+    }
+
+    #campos-animal input{
+        padding: 7px;
+        min-width: 200px;
+        font-size: 1.5rem;
+    }
+
+    #campos-animal{
+        padding-top: 17px;
+    }
+
+    #campos-animal label{
+        margin-top: 17px;
+    }
+
+    #campos-animal input:focus + label{
+        font-size: 12px;
+    }
+
+    #botao-animal button{
+        margin-top: 35% ;   
+        width: 280px;
+        height: 65px;
+        font-size: 2.5rem;
+    }
+    #btnfoto-animal{
+        padding: 4rem;
+        gap: 2rem;
+        width: 250px;
+        height: 180px;
+        font-size: 1.5rem;
+    }
+    #btnfoto-animal i{
+        font-size: 5rem;
+    }
+
+    #previewFoto-animal{
         display: none;
         width: 250px;
         height: 180px;
@@ -184,12 +237,84 @@ h4{
         border-radius: 10px;
     }
 
-    #msgError{
+    #msgError-animal{
         width: 33rem; 
         height:6rem; 
         padding: 1.5rem;
     }
-    #msgSuccess{
+    #msgSuccess-animal{
+        width: 33rem; 
+        height:6rem; 
+        padding: 1.5rem;
+    }
+
+    #cadastrar-encontrado{
+        font-size: 2.5rem;
+        margin:5%;
+    }
+
+    #cadastrar-encontrado h2{
+        margin-right: 22%;
+    }
+
+    #labelNome-encontrado, #labelData-encontrado, #labelDescricao-encontrado{
+        font-size: 1.7rem;
+    }
+
+    #frmCadastro-encontrado #preencher-encontrado{
+        padding: 4rem;
+        width: 400px;
+    }
+
+    #campos-encontrado input{
+        padding: 7px;
+        min-width: 200px;
+        font-size: 1.5rem;
+    }
+
+    #campos-encontrado{
+        padding-top: 17px;
+    }
+
+    #campos-encontrado label{
+        margin-top: 17px;
+    }
+
+    #campos-encontrado input:focus + label{
+        font-size: 12px;
+    }
+
+    #botao-encontrado button{
+        margin-top: 35% ;   
+        width: 280px;
+        height: 65px;
+        font-size: 2.5rem;
+    }
+    #btnfoto-encontrado{
+        padding: 4rem;
+        gap: 2rem;
+        width: 250px;
+        height: 180px;
+        font-size: 1.5rem;
+    }
+    #btnfoto-encontrado i{
+        font-size: 5rem;
+    }
+
+    #previewFoto-encontrado{
+        display: none;
+        width: 250px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    #msgError-encontrado{
+        width: 33rem; 
+        height:6rem; 
+        padding: 1.5rem;
+    }
+    #msgSuccess-encontrado{
         width: 33rem; 
         height:6rem; 
         padding: 1.5rem;
@@ -360,6 +485,175 @@ h4{
 
     }
 
+    #cadastrar-animal{
+        font-size: 4rem;
+        margin:5%;
+        margin-bottom: 0;
+    }
+
+    #cadastrar-animal h2{
+        margin-right: 25%;
+    }
+
+    #labelNome-animal, #labelData-animal, #labelDescricao-animal{
+        font-size: 2rem;
+    }
+
+    #frmCadastro-animal #preencher-animal{
+        padding: 5rem;
+        width: 700px;
+    }
+
+    #campos-animal input{
+        padding: 9px;
+        min-width: 250px;
+        font-size: 1.8rem;
+    }
+
+    #campos-animal{
+        padding-top: 20px;
+    }
+
+    #campos-animal label{
+        padding-top: 20px;
+    }
+
+    #campos-animal input:focus + label{
+        font-size: 16px;
+    }
+
+    #botao-animal button{
+        margin-top: 28%;   
+        width: 280px;
+        height: 65px;
+        font-size: 2.5rem;
+    }
+    #btnfoto-animal{
+        padding: 4.2rem;
+        gap: 2rem;
+        width: 380px;
+        height: 200px;
+        font-size: 1.8rem;
+    }
+    #btnfoto-animal i{
+        font-size: 5.5rem;
+    }
+
+    #previewFoto-animal{
+        display: none;
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    #msgError-animal{
+        margin: 2%;
+        width: 40rem; 
+        height:8rem; 
+        padding: 1.6rem;
+        justify-content: center;
+    }
+    #msgSuccess-animal{
+        margin: 2%;
+        width: 40rem; 
+        height:8rem; 
+        padding: 1.6rem;
+        justify-content: center;
+    }
+    #msgErro-animal{
+            font-size: 2rem; 
+        }
+    #msgSuce-animal{
+        font-size: 2rem; 
+
+    }
+
+
+    #cadastrar-encontrado{
+        font-size: 4rem;
+        margin:5%;
+        margin-bottom: 0;
+    }
+
+    #cadastrar-encontrado h2{
+        margin-right: 25%;
+    }
+
+    #labelNome-encontrado, #labelData-encontrado, #labelDescricao-encontrado{
+        font-size: 2rem;
+    }
+
+    #frmCadastro-encontrado #preencher-encontrado{
+        padding: 5rem;
+        width: 700px;
+    }
+
+    #campos-encontrado input{
+        padding: 9px;
+        min-width: 250px;
+        font-size: 1.8rem;
+    }
+
+    #campos-encontrado{
+        padding-top: 20px;
+    }
+
+    #campos-encontrado label{
+        padding-top: 20px;
+    }
+
+    #campos-encontrado input:focus + label{
+        font-size: 16px;
+    }
+
+    #botao-encontrado button{
+        margin-top: 28%;   
+        width: 280px;
+        height: 65px;
+        font-size: 2.5rem;
+    }
+    #btnfoto-encontrado{
+        padding: 4.2rem;
+        gap: 2rem;
+        width: 380px;
+        height: 200px;
+        font-size: 1.8rem;
+    }
+    #btnfoto-encontrado i{
+        font-size: 5.5rem;
+    }
+
+    #previewFoto-encontrado{
+        display: none;
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    #msgError-encontrado{
+        margin: 2%;
+        width: 40rem; 
+        height:8rem; 
+        padding: 1.6rem;
+        justify-content: center;
+    }
+    #msgSuccess-encontrado{
+        margin: 2%;
+        width: 40rem; 
+        height:8rem; 
+        padding: 1.6rem;
+        justify-content: center;
+    }
+    #msgErro-encontrado{
+            font-size: 2rem; 
+        }
+    #msgSuce-encontrado{
+        font-size: 2rem; 
+
+    }
+
     #perfil{
         gap: 25%;
     }
@@ -467,7 +761,6 @@ h4{
         border-radius: 10px;
     }
 
-
     #msgError{
         margin: 7% 0 0 0;
         width: 80rem; 
@@ -487,6 +780,172 @@ h4{
     }
     #msgSuce{
         font-size: 2.5rem; 
+
+    }
+
+    #cadastrar-animal{
+        font-size: 5rem;
+    }
+
+    #cadastrar-animal h2{
+        font-size: 3.3rem;
+        margin-right: 25%;
+    }
+
+    #labelNome-animal, #labelData-animal, #labelDescricao-animal{
+        font-size: 2.5rem;
+    }
+
+    #frmCadastro-animal #preencher-animal{
+        padding: 5.5rem;
+        width: 1000px
+    }
+
+    #campos-animal input{
+        padding: 12px;
+        min-width: 280px;
+        font-size: 2rem;
+    }
+
+    #campos-animal{
+        padding-top: 25px;
+    }
+
+    #campos-animal label{
+       padding-top: 25px;
+    }
+
+    #campos-animal input:focus + label{
+        font-size: 19px;
+    }
+
+    #botao-animal button{
+        margin-top: 28%;   
+        width: 280px;
+        height: 65px;
+        font-size: 2.5rem;
+    }
+    #btnfoto-animal{
+        padding:6.5rem;
+        gap: 2rem;
+        width: 380px;
+        height: 250px;
+        font-size: 1.8rem;
+    }
+    #btnfoto-animal i{
+        font-size: 5.5rem;
+    }
+
+    #previewFoto-animal{
+        display: none;
+        width: 380px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    #msgError-animal{
+        margin: 7% 0 0 0;
+        width: 80rem; 
+        height:9rem; 
+        padding: 2.7rem;
+        justify-content: center;
+    }
+    #msgSuccess-animal{
+        margin: 7% 0 0 0;
+        width: 80rem; 
+        height:9rem; 
+        padding: 2.7rem;
+        justify-content: center;
+    }
+    #msgErro-animal{
+        font-size: 2.5rem; 
+        }
+    #msgSuce-animal{
+        font-size: 2.5rem;  
+
+    }
+
+    #cadastrar-encontrado{
+        font-size: 5rem;
+    }
+
+    #cadastrar-encontrado h2{
+        font-size: 3.3rem;
+        margin-right: 25%;
+    }
+
+    #labelNome-encontrado, #labelData-encontrado, #labelDescricao-encontrado{
+        font-size: 2.5rem;
+    }
+
+    #frmCadastro-encontrado #preencher-encontrado{
+        padding: 5.5rem;
+        width: 1000px
+    }
+
+    #campos-encontrado input{
+        padding: 12px;
+        min-width: 280px;
+        font-size: 2rem;
+    }
+
+    #campos-encontrado{
+        padding-top: 25px;
+    }
+
+    #campos-encontrado label{
+       padding-top: 25px;
+    }
+
+    #campos-encontrado input:focus + label{
+        font-size: 19px;
+    }
+
+    #botao-encontrado button{
+        margin-top: 28%;   
+        width: 280px;
+        height: 65px;
+        font-size: 2.5rem;
+    }
+    #btnfoto-encontrado{
+        padding:6.5rem;
+        gap: 2rem;
+        width: 380px;
+        height: 250px;
+        font-size: 1.8rem;
+    }
+    #btnfoto-encontrado i{
+        font-size: 5.5rem;
+    }
+
+    #previewFoto-encontrado{
+        display: none;
+        width: 380px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    #msgError-encontrado{
+        margin: 7% 0 0 0;
+        width: 80rem; 
+        height:9rem; 
+        padding: 2.7rem;
+        justify-content: center;
+    }
+    #msgSuccess-encontrado{
+        margin: 7% 0 0 0;
+        width: 80rem; 
+        height:9rem; 
+        padding: 2.7rem;
+        justify-content: center;
+    }
+    #msgErro{
+        font-size: 2.5rem; 
+        }
+    #msgSuce{
+        font-size: 2.5rem;  
 
     }
 
