@@ -66,42 +66,54 @@ descricao.addEventListener('keyup', () => {
 
 function cadastrar(event) {
     event.preventDefault();
-    
-    if(validNome && validDescricao){
-        const perdidos = JSON.parse(localStorage.getItem("perdidos")) || [];
-     
-        perdidos.push({
-            nomeCad: nome.value.trim(),
-            descricaoCad: descricao.value.trim(),
-            dataCad: data.value,
-            fotoCad: foto.value
-        })
-     
-    localStorage.setItem("perdidos", JSON.stringify(perdidos))
 
-    msgSuccess.setAttribute("style", "display: flex");
-    msgSuce.textContent = "Cadastrando animal...";
-    msgSuce.style.color = "#ffff";
-    msgError.setAttribute("style", "display: none")
-    msgError.innerHTML = ""
-    setTimeout(() => {
-        //Redireciona para a página principal
-        window.location.href = "../pages-petsos/principal.html";
-    }, 2000);
-    form.reset(
-      previewFoto.src = '',
-      previewFoto.style.display = 'none',
-      imgbnt.style.display = 'block',
-      adcFoto.style.display = 'block',
-      btnfoto.style.padding = '20px'
-    );
-  }else{
-    msgError.setAttribute("style", "display: flex")
-    msgErro.textContent = "Todos os campos devem ser preenchidos corretamente!";
-    msgErro.style.color = "#ffff";
-    msgSuccess.setAttribute("style", "display: none")
-    msgSuccess.innerHTML = ""
-  }
+    if (validNome && validDescricao) {
+        const arquivo = inputFoto.files[0];
+
+        if (arquivo) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const base64Foto = e.target.result;
+                const perdidos = JSON.parse(localStorage.getItem("perdidos")) || [];
+
+                perdidos.push({
+                    nomeCad: nome.value.trim(),
+                    descricaoCad: descricao.value.trim(),
+                    dataCad: data.value,
+                    fotoCad: base64Foto
+                });
+
+                localStorage.setItem("perdidos", JSON.stringify(perdidos));
+
+                msgSuccess.style.display = 'flex';
+                msgSuce.textContent = "Cadastrando animal...";
+                msgSuce.style.color = "#fff";
+                msgError.style.display = 'none';
+                msgErro.textContent = "";
+
+                setTimeout(() => {
+                    window.location.href = "../pages-petsos/principal.html";
+                }, 2000);
+
+                form.reset();
+                previewFoto.src = '';
+                previewFoto.style.display = 'none';
+                imgbnt.style.display = 'block';
+                adcFoto.style.display = 'block';
+                btnfoto.style.padding = '20px';
+            };
+            reader.readAsDataURL(arquivo);
+        } else {
+            msgError.style.display = 'flex';
+            msgErro.textContent = "Adicione uma foto do animal!";
+            msgErro.style.color = "#fff";
+        }
+    } else {
+        msgError.style.display = 'flex';
+        msgErro.textContent = "Todos os campos devem ser preenchidos corretamente!";
+        msgErro.style.color = "#fff";
+        msgSuccess.style.display = 'none';
+        msgSuce.textContent = "";
+    }
 }
-
 btn.addEventListener('click', cadastrar);

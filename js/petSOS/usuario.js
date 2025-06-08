@@ -88,45 +88,57 @@ cpf.addEventListener('keyup', () => {
   })
 
 function cadastrar(event) {
-    event.preventDefault();
-    
-    if(validCpf && validTelefone && validEmail && validSenha){
-        const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-     
-        usuarios.push({
-            nomeCad: nome.value.trim(),
-            telefoneCad: telefone.value,
-            emailCad: email.value,
-            cpfCad: cpf.value,
-            senhaCad: senha.value.trim(),
-            fotoCad: foto.value
-        })
-     
-    localStorage.setItem("usuarios", JSON.stringify(usuarios))
+  event.preventDefault();
+  if(validCpf && validTelefone && validEmail && validSenha){
+        const arquivo = inputFoto.files[0];
 
-    msgSuccess.setAttribute("style", "display: flex");
-    msgSuce.textContent = "Cadastrando usuário...";
-    msgSuce.style.color = "#ffff";
-    msgError.setAttribute("style", "display: none")
-    msgError.innerHTML = ""
-    setTimeout(() => {
-        //Redireciona para a página principal
-        window.location.href = "../pages-petsos/principal.html";
-    }, 2000);
-    form.reset(
-      previewFoto.src = '',
-      previewFoto.style.display = 'none',
-      imgbnt.style.display = 'block',
-      adcFoto.style.display = 'block',
-      btnfoto.style.padding = '20px'
-    );
-  }else{
-    msgError.setAttribute("style", "display: flex")
-    msgErro.textContent = "Todos os campos devem ser preenchidos corretamente!";
-    msgErro.style.color = "#ffff";
-    msgSuccess.setAttribute("style", "display: none")
-    msgSuccess.innerHTML = ""
-  }
-}
+        if (arquivo) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const base64Foto = e.target.result;
+                const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
+                usuarios.push({
+                    nomeCad: nome.value.trim(),
+                    telefoneCad: telefone.value,
+                    emailCad: email.value,
+                    cpfCad: cpf.value,
+                    senhaCad: senha.value.trim(),
+                    fotoCad: base64Foto
+                });
+
+                localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+                msgSuccess.style.display = 'flex';
+                msgSuce.textContent = "Cadastrando usuário...";
+                msgSuce.style.color = "#fff";
+                msgError.style.display = 'none';
+                msgErro.textContent = "";
+
+                setTimeout(() => {
+                    window.location.href = "../pages-petsos/principal.html";
+                }, 2000);
+
+                form.reset();
+                previewFoto.src = '';
+                previewFoto.style.display = 'none';
+                imgbnt.style.display = 'block';
+                adcFoto.style.display = 'block';
+                btnfoto.style.padding = '20px';
+            };
+            reader.readAsDataURL(arquivo);
+        } else {
+            msgError.style.display = 'flex';
+            msgErro.textContent = "Adicione uma foto!";
+            msgErro.style.color = "#fff";
+        }
+
+    } else {
+        msgError.style.display = 'flex';
+        msgErro.textContent = "Todos os campos devem ser preenchidos corretamente!";
+        msgErro.style.color = "#fff";
+        msgSuccess.style.display = 'none';
+        msgSuce.textContent = "";
+    }
+};
 btn.addEventListener('click', cadastrar);

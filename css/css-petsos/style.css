@@ -8,7 +8,7 @@
 @import url(../css-petsos/encontrado.css);
 @import url(../css-petsos/detalhes.css);
 @import url(../css-petsos/perfil.css);
-*{
+*{    
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -328,6 +328,12 @@ h4{
         gap: 22%;
     }
 
+    #fotoPerfil{
+        margin-top: 15%;
+        width: 140px;
+        height: 140px;
+    }
+
     #perfil div{
         margin: 5%;
         gap: 1rem;
@@ -349,6 +355,34 @@ h4{
 
     #bartolomeu p, #clodomiro p, #garfhielddhy p{
         font-size: 1.5rem;
+    }
+
+    #detalhes{
+        margin: 5% 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 22.5%;
+    }
+
+    #detalhe-animal{
+        width: 50rem;
+        height: 50rem;
+        margin: 5% 0;
+    }
+
+    #detalhe-animal img{
+        border-radius: 10px;
+        width: 25rem;
+        height: 19rem;
+    }
+
+    #detalhe-animal p{
+        font-size: 1.5rem;
+    }
+    #detalhe-animal p i{
+        font-size: 1.7rem;
+        margin: 1rem;
     }
 
 }
@@ -569,7 +603,6 @@ h4{
 
     }
 
-
     #cadastrar-encontrado{
         font-size: 4rem;
         margin:5%;
@@ -655,7 +688,7 @@ h4{
     }
 
     #perfil{
-        gap: 25%;
+        gap: 24%;
     }
 
     #perfil div{
@@ -675,6 +708,32 @@ h4{
 
     #bartolomeu p, #clodomiro p, #garfhielddhy p{
         font-size: 1.8rem;
+    }
+
+
+    #detalhes{
+        margin: 0;
+        gap: 26%;
+    }
+
+    #detalhe-animal{
+        width: 50rem;
+        height: 50rem;
+        margin: 5% 0;
+    }
+
+    #detalhe-animal img{
+        border-radius: 10px;
+        width: 25rem;
+        height: 19rem;
+    }
+
+    #detalhe-animal p{
+        font-size: 1.5rem;
+    }
+    #detalhe-animal p i{
+        font-size: 1.7rem;
+        margin: 1.2rem;
     }
 }
 
@@ -718,6 +777,7 @@ h4{
     }
 
     #cadastrar{
+        
         font-size: 5rem;
     }
 
@@ -954,7 +1014,13 @@ h4{
     }
 
     #perfil{
-        gap: 22.5%;
+        gap: 27%;
+    }
+
+    #fotoPerfil{
+        width: 180px;
+        height: 180px;
+        border: 4px solid #000000c0;
     }
 
     #perfil div{
@@ -974,5 +1040,30 @@ h4{
 
     #bartolomeu p, #clodomiro p, #garfhielddhy p{
         font-size: 2rem;
+    }
+
+    #detalhes{
+        margin: 0;
+        gap: 28%;
+    }
+
+    #detalhe-animal{
+        width: 70rem;
+        height: 50rem;
+        margin: 5% 0;
+    }
+
+    #detalhe-animal img{
+        border-radius: 10px;
+        width: 25rem;
+        height: 19rem;
+    }
+
+    #detalhe-animal p{
+        font-size: 1.7rem;
+    }
+    #detalhe-animal p i{
+        font-size: 2rem;
+        margin: 1.2rem;
     }
 }
