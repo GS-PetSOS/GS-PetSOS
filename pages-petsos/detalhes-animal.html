@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="../css/css-petsos/style.css">
     <link rel="shortcut icon" href="../assets/img/img-obrigatorias/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "35f8f6d2-1237-4f88-ab90-ddd078f31d15", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "fb229c84-9a88-45b3-97e0-2f0cc6b6f50c", // The ID of your service instance.
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
     <script src="../js/petSOS/detalhes.js" defer></script>
 </head>
 <body>
